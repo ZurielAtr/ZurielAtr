@@ -235,6 +235,9 @@ img {
 .footer {
   margin: 1rem 0;
 }
+.redes a {
+  color: #000000;
+}
 .barra-f {
   display: flex;
   justify-content: space-between;
@@ -249,5 +252,26 @@ img {
   }
   .barra-f p {
     font-size: 1.6rem;
+  }
+}
+
+
+/* About Me */
+
+@media (min-width: 768px) {
+  .about {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 3rem;
+  }
+  .imgabout {
+    width: 40%;
+    flex: 0 0 calc( 50% - 2rem );
+  }
+  .about-text p {
+    line-height: 2.5rem;
   }
 }

@@ -1,3 +1,11 @@
+const navtoggle = document.querySelector('.menu');
+const navmenu = document.querySelector('.navegacion');
+
+navtoggle.addEventListener("click", ()=>{
+    navmenu.classList.toggle('nav-res');
+})
+
+
 const images = document.querySelectorAll('.img');
 const contenedorimage = document.querySelector('.contenedor-img');
 const imagecontenedor = document.querySelector('.img-show');
@@ -22,9 +30,3 @@ closeModal.addEventListener('click', ()=>{
 
 
 
-const navtoggle = document.querySelector('.menu');
-const navmenu = document.querySelector('.navegacion');
-
-navtoggle.addEventListener("click", ()=>{
-    navmenu.classList.toggle('nav-res');
-})
