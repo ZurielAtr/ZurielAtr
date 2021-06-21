@@ -40,7 +40,7 @@ h1 {
 }
 
 h2 {
-  font-size: 6rem;
+  font-size: 4rem;
 }
 
 h3 {
@@ -79,7 +79,13 @@ img {
 }
 @media (min-width: 768px) {
   .header_texto {
-    margin-top: 18rem;
+    margin-top: 16rem;
+  }
+  .header_texto h2 {
+    font-size: 10rem;
+  }
+  .header_texto p {
+    font-size: 2rem;
   }
 }
 
@@ -94,6 +100,7 @@ img {
   }
 }
 
+
 @media (min-width: 768px) {
   .barra {
     display: flex;
@@ -101,17 +108,49 @@ img {
     align-items: center;
   }
 }
+.barra {
+  display: flex;
+  justify-content: space-between;
+}
 .logo {
   color: var(--negro);
 }
 .logoname {
   font-weight: 400;
 }
-@media (min-width: 768px) {
-  .navegacion {
-    display: flex;
-    gap: 2rem;
+.menu {
+  display: none;
+}
+.navegacion {
+  display: flex;
+  gap: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .menu {
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    color: #000000;
+    z-index: 1;
   }
+  .navegacion {
+    position: fixed;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+    overflow-y: auto;
+    left: 100%;
+    transition: left .4s;
+  }
+}
+.nav-res {
+  left: 0%;
 }
 .nav_enlace {
   display: block;
@@ -120,7 +159,10 @@ img {
   margin: 1rem;
   color: var(--negro);
 }
-
+.nav_enlace:hover {
+  color: #4F68E3;
+  transition: .3s;
+}
 .galeria h3 {
   text-align: center;
 }
@@ -190,8 +232,22 @@ img {
   }
 }
 
+.footer {
+  margin: 1rem 0;
+}
 .barra-f {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+}
+.barra-f p {
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .barra-f {
+    justify-content: space-around;
+  }
+  .barra-f p {
+    font-size: 1.6rem;
+  }
 }

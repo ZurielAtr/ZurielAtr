@@ -19,3 +19,12 @@ closeModal.addEventListener('click', ()=>{
     contenedorimage.classList.toggle('move');
     imagecontenedor.classList.toggle('show');
 })
+
+
+
+const navtoggle = document.querySelector('.menu');
+const navmenu = document.querySelector('.navegacion');
+
+navtoggle.addEventListener("click", ()=>{
+    navmenu.classList.toggle('nav-res');
+})
