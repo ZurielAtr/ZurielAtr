@@ -251,6 +251,9 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+.barra-f a {
+  color: var(--blanco);
+}
 .barra-f p {
   font-size: 1rem;
   color: var(--blanco);
