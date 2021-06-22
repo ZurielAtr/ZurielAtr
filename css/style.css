@@ -238,11 +238,13 @@ img {
   }
 }
 
+/* Footer */
 .footer {
-  margin: 2rem 0;
+  margin: 5rem 0 0 0;
+  background-color: #000000;
 }
 .redes a {
-  color: #000000;
+  color: var(--blanco);
 }
 .barra-f {
   display: flex;
@@ -251,6 +253,7 @@ img {
 }
 .barra-f p {
   font-size: 1rem;
+  color: var(--blanco);
 }
 @media (min-width: 768px) {
   .barra-f {
@@ -262,7 +265,6 @@ img {
 }
 
 /* About Me */
-
 .direct {
   font-weight: bold;
   color: var(--negro);
@@ -283,4 +285,10 @@ img {
   .about-text p {
     line-height: 2.5rem;
   }
+}
+.about-text h3 {
+  margin-top: 1rem;
+}
+.about-text p {
+  line-height: 2.5rem;
 }
