@@ -49,6 +49,9 @@ h2 {
 h3 {
   font-size: 3rem;
 }
+h4 {
+  font-size: 2.5rem;
+}
 img {
   max-width: 100%;
 }
@@ -131,7 +134,7 @@ img {
   display: flex;
   gap: 2rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .menu {
     display: block;
     text-align: center;
@@ -294,4 +297,47 @@ img {
 }
 .about-text p {
   line-height: 2.5rem;
+}
+
+/* Comisiones */
+.comimg {
+  text-align: center;
+  margin: 0 auto;
+}
+.imgm {
+  max-width: 12rem;
+  margin: 0.5rem;
+}
+.comtext h3 {
+  margin: 0;
+}
+.comtext p {
+  line-height: 2.5rem;
+}
+@media (min-width: 768px) {
+  .emotes {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .imgm {
+    max-width: 14rem;
+  }
+}
+@media (min-width: 1024px) {
+  .emotes {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .imgm {
+    max-width: 14.5rem;
+  }
+  .comtext {
+    flex: 0 0 calc(50%);
+  }
 }
