@@ -34,7 +34,9 @@ a {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4 {
   font-family: var(--fuenteheading);
 }
 
@@ -65,6 +67,9 @@ img {
 }
 .centrar {
   text-align: center;
+}
+span {
+  font-weight: bold;
 }
 
 /* Header */
@@ -105,7 +110,6 @@ img {
 }
 @media (min-width: 768px) {
   .back {
-    background-color: var(--blanco);
     padding: 1.5rem 0 1.5rem 0;
   }
 }
@@ -133,6 +137,7 @@ img {
 .navegacion {
   display: flex;
   gap: 2rem;
+  font-family: var(--fuenteheading);
 }
 @media screen and (max-width: 1024px) {
   .menu {
@@ -164,12 +169,12 @@ img {
 .nav_enlace {
   display: block;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   margin: 1rem;
   color: var(--negro);
 }
 .nav_enlace:hover {
-  color: #4f68e3;
+  color: #b47cff;
   transition: 0.3s;
 }
 .galeria h3 {
@@ -243,27 +248,26 @@ img {
 
 /* Footer */
 .footer {
-  margin: 5rem 0 0 0;
-  background-color: #000000;
-}
-.redes a {
-  color: var(--blanco);
+  background-color: #4d2c91;
+  padding: 1rem;
 }
 .barra-f {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-}
-.barra-f a {
   color: var(--blanco);
+}
+.redes a {
+  color: var(--blanco);
+  font-size: 3rem;
 }
 .barra-f p {
-  font-size: 1rem;
-  color: var(--blanco);
+  font-size: 1.3rem;
+  margin: 1rem 0 0 0;
 }
 @media (min-width: 768px) {
-  .barra-f {
-    justify-content: space-around;
+  .redes a {
+    font-size: 3rem;
   }
   .barra-f p {
     font-size: 1.6rem;
@@ -275,6 +279,9 @@ img {
   font-weight: bold;
   color: var(--negro);
 }
+.about {
+  padding: 1rem 0 4rem 0;
+}
 @media (min-width: 1085px) {
   .about {
     display: flex;
@@ -282,7 +289,6 @@ img {
     justify-content: space-between;
     width: 80%;
     margin: 0 auto;
-    padding-top: 3rem;
   }
   .imgabout {
     width: 40%;
@@ -300,6 +306,22 @@ img {
 }
 
 /* Comisiones */
+.seccion {
+  background-color: #7e57c2;
+  color: var(--blanco);
+}
+.tit {
+  padding: 3rem 0 0 0;
+}
+.comtext h3 {
+  margin: 0;
+}
+.comtext p {
+  line-height: 2.5rem;
+}
+.compad {
+  padding: 4rem 0;
+}
 .comimg {
   text-align: center;
   margin: 0 auto;
@@ -308,36 +330,46 @@ img {
   max-width: 12rem;
   margin: 0.5rem;
 }
-.comtext h3 {
-  margin: 0;
+.imgp {
+  max-width: 25rem;
 }
-.comtext p {
-  line-height: 2.5rem;
+@media (min-width: 480px) {
+  .imgp {
+    max-width: 35rem;
+  }
 }
 @media (min-width: 768px) {
-  .emotes {
+  .compad {
     display: flex;
     justify-content: space-between;
-    gap: 5rem;
+    gap: 2rem;
     width: 90%;
     margin: 0 auto;
   }
+  .imgp {
+    max-width: 100%;
+  }
   .imgm {
-    max-width: 14rem;
+    max-width: 13rem;
+  }
+  .comtext {
+    flex: 0 0 calc(50%);
   }
 }
 @media (min-width: 1024px) {
-  .emotes {
-    display: flex;
-    justify-content: space-between;
-    gap: 5rem;
+  .compad {
+    gap: 4rem;
     width: 80%;
-    margin: 0 auto;
   }
   .imgm {
     max-width: 14.5rem;
   }
   .comtext {
     flex: 0 0 calc(50%);
+  }
+}
+@media (min-width: 1200px) {
+  .imgp {
+    max-width: 35rem;
   }
 }
