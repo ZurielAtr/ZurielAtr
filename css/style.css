@@ -333,9 +333,31 @@ span a {
 .imgp {
   max-width: 25rem;
 }
+.does {
+  padding: 4rem 0;
+}
+.columnas {
+  display: flex;
+  align-items: center;
+  line-height: 2.5rem;
+}
+.columnas i {
+  font-size: 3rem;
+  padding: 0 1rem 0 0;
+}
+.do i {
+  color: #00c853;
+}
+.dont i{
+  color: #d50000;
+}
 @media (min-width: 480px) {
   .imgp {
     max-width: 35rem;
+  }
+  .does {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 @media (min-width: 768px) {
@@ -343,21 +365,32 @@ span a {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
   }
   .term {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
   }
   .imgp {
     max-width: 100%;
   }
   .imgm {
-    max-width: 13rem;
+    max-width: 11rem;
   }
   .comtext {
     flex: 0 0 calc(50%);
+  }
+  .columnas i {
+    font-size: 4rem;
+  }
+  .does {
+    display: flex;
+    gap: 2rem;
+    width: 80%;
+  }
+  .do {
+    flex: 0 0 calc(60%);
   }
 }
 @media (max-width: 768px) {
@@ -369,19 +402,26 @@ span a {
 @media (min-width: 1024px) {
   .compad {
     gap: 4rem;
-    width: 80%;
+    width: 60%;
   }
   .term {
-    width: 80%;
+    width: 60%;
   }
   .imgm {
-    max-width: 14.5rem;
+    max-width: 10rem;
   }
   .comtext {
     flex: 0 0 calc(50%);
   }
+  .does {
+    width: 60%;
+    margin: 0 auto;
+  }
 }
 @media (min-width: 1200px) {
+  .imgm {
+    max-width: 12rem;
+  }
   .imgp {
     max-width: 35rem;
   }
