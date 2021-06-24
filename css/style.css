@@ -71,6 +71,9 @@ img {
 span {
   font-weight: bold;
 }
+span a {
+  color: var(--negro);
+}
 
 /* Header */
 .header {
@@ -107,6 +110,7 @@ span {
 .back {
   background-color: var(--blanco);
   padding: 1rem 0 1rem 0;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 }
 @media (min-width: 768px) {
   .back {
@@ -306,12 +310,12 @@ span {
 }
 
 /* Comisiones */
-.seccion {
-  background-color: #7e57c2;
-  color: var(--blanco);
-}
 .tit {
   padding: 3rem 0 0 0;
+}
+.term {
+  padding: 4rem 0 0 0;
+  text-align: justify;
 }
 .comtext h3 {
   margin: 0;
@@ -321,10 +325,6 @@ span {
 }
 .compad {
   padding: 4rem 0;
-}
-.comimg {
-  text-align: center;
-  margin: 0 auto;
 }
 .imgm {
   max-width: 12rem;
@@ -346,6 +346,10 @@ span {
     width: 90%;
     margin: 0 auto;
   }
+  .term {
+    width: 90%;
+    margin: 0 auto;
+  }
   .imgp {
     max-width: 100%;
   }
@@ -356,9 +360,18 @@ span {
     flex: 0 0 calc(50%);
   }
 }
+@media (max-width: 768px) {
+  .comimg {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
 @media (min-width: 1024px) {
   .compad {
     gap: 4rem;
+    width: 80%;
+  }
+  .term {
     width: 80%;
   }
   .imgm {
@@ -371,5 +384,33 @@ span {
 @media (min-width: 1200px) {
   .imgp {
     max-width: 35rem;
+  }
+}
+
+/* Terminos y condiciones */ 
+.terms {
+  line-height: 2.5rem;
+  margin: 0 auto;
+  padding: 4rem 0;
+  text-align: justify;
+  width: 90%;
+}
+.sec {
+  padding: 1.5rem 0;
+}
+@media (min-width: 480px) {
+  .terms {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  .terms {
+    width: 60%;
+  }
+}
+@media (min-width: 1024px) {
+  .terms {
+    width: 40%;
   }
 }
