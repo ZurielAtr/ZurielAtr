@@ -454,3 +454,50 @@ span a {
     width: 40%;
   }
 }
+
+/* Contacto */
+.two-col {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+.sociales {
+  line-height: 2.5rem;
+}
+.sociales h3 {
+  margin: 0;
+}
+.sociales a {
+  color: var(--negro);
+}
+.social {
+  text-align: center;
+  font-size: 3.5rem;
+}
+.social a {
+  color: #7e57c2;
+}
+@media (min-width: 480px) {
+  .two-col {
+    width: 70%;
+  }
+}
+@media (min-width: 768px) {
+  .two-col {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .sociales {
+    flex: 0 0 calc(50%);
+  }
+  .social {
+    text-align: center;
+    font-size: 4rem;
+  }
+  .social a {
+    color: #7e57c2;
+  }
+}
